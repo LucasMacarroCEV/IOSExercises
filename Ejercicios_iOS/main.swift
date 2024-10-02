@@ -18,7 +18,7 @@ while true{
             print("Error: Teclea un número de ejercicio válido.")
         }
     }
-    if exercise > 0 && exercise < 3{
+    if exercise > 0 && exercise <= 4{
         ExerciseTitle(exercise: exercise)
     }
     switch exercise {
