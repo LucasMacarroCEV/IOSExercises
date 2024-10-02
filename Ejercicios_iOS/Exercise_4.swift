@@ -27,7 +27,7 @@ func Censor(phraseArray: Array<Substring>) -> Array<Substring>{
     }
     return newPhraseArray
 }
-func BuildNewPhrase(censoredPhraseArray: Array<Substring>) -> String{
+func BuildCensoredPhrase(censoredPhraseArray: Array<Substring>) -> String{
     var censoredPhrase: String = ""
     for word in censoredPhraseArray{
         censoredPhrase.append(word + " ")
@@ -40,6 +40,6 @@ func Exercise4(){
     let phrase = readLine()!
     let phraseArray = SplitPhrase(phrase: phrase)
     let censoredPhraseArray = Censor(phraseArray: phraseArray)
-    let censoredPhrase = BuildNewPhrase(censoredPhraseArray: censoredPhraseArray)
+    let censoredPhrase = BuildCensoredPhrase(censoredPhraseArray: censoredPhraseArray)
     print("Frase censurada:\n" + censoredPhrase)
 }

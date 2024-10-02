@@ -8,7 +8,7 @@ func ExerciseTitle(exercise:Int){
 }
 
 while true{
-    print("¿Qué ejercicio quieres ver?  1-2-3-4")
+    print("¿Qué ejercicio quieres ver?  1-2-3-4-5")
     while true{
         if let ex = Int(readLine()!){
             exercise = ex
@@ -18,7 +18,7 @@ while true{
             print("Error: Teclea un número de ejercicio válido.")
         }
     }
-    if exercise > 0 && exercise <= 4{
+    if exercise > 0 && exercise <= 5{
         ExerciseTitle(exercise: exercise)
     }
     switch exercise {
@@ -30,6 +30,8 @@ while true{
         Exercise3()
     case 4:
         Exercise4()
+    case 5:
+        Exercise5()
     default:
         print("Error: Teclea un número de ejercicio válido.")
     }
