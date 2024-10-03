@@ -28,10 +28,7 @@ func Censor(phraseArray: Array<Substring>) -> Array<Substring>{
     return newPhraseArray
 }
 func BuildCensoredPhrase(censoredPhraseArray: Array<Substring>) -> String{
-    var censoredPhrase: String = ""
-    for word in censoredPhraseArray{
-        censoredPhrase.append(word + " ")
-    }
+    let censoredPhrase = censoredPhraseArray.joined(separator: " ")
     return censoredPhrase
 }
 
